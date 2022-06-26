@@ -1,33 +1,64 @@
 <template>
-    <div style="height: 360px; position: relative">
-        <n-layout position="absolute">
-            <n-layout-header style="height: 64px; padding: 24px" bordered> Yiheyuan Road </n-layout-header>
-            <n-layout has-sider position="absolute" style="top: 64px; bottom: 64px">
-                <n-layout-sider bordered content-style="padding: 24px;"> Handian Bridge </n-layout-sider>
-                <n-layout content-style="padding: 24px;">
-                    <n-h2>Pingshan Road</n-h2>
-                    <n-h2>Pingshan Road</n-h2>
-                    <n-h2>Pingshan Road</n-h2>
-                    <n-h2>Pingshan Road</n-h2>
-                    <n-h2>Pingshan Road</n-h2>
-                    <n-h2>Pingshan Road</n-h2>
-                    <n-h2>Pingshan Road</n-h2>
-                    <n-h2>Pingshan Road</n-h2>
-                    <n-h2>Pingshan Road</n-h2>
-                    <n-h2>Pingshan Road</n-h2>
-                    <n-h2>Pingshan Road</n-h2>
-                    <n-h2>Pingshan Road</n-h2>
-                </n-layout>
-            </n-layout>
-            <n-layout-footer bordered position="absolute" style="height: 64px; padding: 24px"> 城府路 </n-layout-footer>
-        </n-layout>
-    </div>
+    <n-divider>Self Responsive</n-divider>
+    <n-grid cols="2 400:4 600:6">
+        <n-grid-item>
+            <div class="light-green">1</div>
+        </n-grid-item>
+        <n-grid-item>
+            <div class="green">2</div>
+        </n-grid-item>
+        <n-grid-item>
+            <div class="light-green">3</div>
+        </n-grid-item>
+        <n-grid-item>
+            <div class="green">4</div>
+        </n-grid-item>
+        <n-grid-item>
+            <div class="light-green">5</div>
+        </n-grid-item>
+        <n-grid-item>
+            <div class="green">6</div>
+        </n-grid-item>
+    </n-grid>
+    <n-divider>Screen Responsive</n-divider>
+    <n-grid cols="2 s:3 m:4 l:5 xl:6 2xl:7" responsive="screen">
+        <n-grid-item>
+            <div class="light-green">1</div>
+        </n-grid-item>
+        <n-grid-item>
+            <div class="green">2</div>
+        </n-grid-item>
+        <n-grid-item>
+            <div class="light-green">3</div>
+        </n-grid-item>
+        <n-grid-item>
+            <div class="green">4</div>
+        </n-grid-item>
+        <n-grid-item>
+            <div class="light-green">5</div>
+        </n-grid-item>
+        <n-grid-item>
+            <div class="green">6</div>
+        </n-grid-item>
+        <n-grid-item>
+            <div class="light-green">7</div>
+        </n-grid-item>
+    </n-grid>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    name: 'HomeView',
-})
-</script>
+<style scoped>
+.light-green {
+    height: 108px;
+    background-color: rgba(0, 128, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.green {
+    height: 108px;
+    background-color: rgba(0, 128, 0, 0.24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
