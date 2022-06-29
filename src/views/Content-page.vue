@@ -1,5 +1,4 @@
 <template>
-    <n-divider>Screen Responsive</n-divider>
     <n-grid class="p-2" cols="2 l:3" :x-gap="12" :y-gap="8" responsive="screen">
         <n-grid-item v-for="(item, index) in list" :key="index">
             <n-card class="flex items-center">
