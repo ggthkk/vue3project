@@ -15,6 +15,8 @@
     "types": [
       "webpack-env"
     ],
+    "noImplicitAny": false,
+"allowJs": true,
     "paths": {
       "@/*": [
         "src/*"

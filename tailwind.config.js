@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-    purge: ['./index.html', './src/App.vue'],
+    purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     presets: [],
     darkMode: 'class', // or 'media' or 'class'
     theme: {
@@ -179,9 +179,7 @@ module.exports = {
             200: '2',
         },
         container: {},
-        content: {
-            none: 'none',
-        },
+        content: ['./node_modules/flowbite/**/*.js'],
         cursor: {
             auto: 'auto',
             default: 'default',
@@ -283,6 +281,7 @@ module.exports = {
             '7xl': ['4.5rem', { lineHeight: '1' }],
             '8xl': ['6rem', { lineHeight: '1' }],
             '9xl': ['8rem', { lineHeight: '1' }],
+            test: ['2vw', { lineHeight: '1' }],
         },
         fontWeight: {
             thin: '100',
@@ -969,5 +968,5 @@ module.exports = {
         wordBreak: ['responsive'],
         zIndex: ['responsive', 'focus-within', 'focus'],
     },
-    plugins: [],
+    plugins: [require('flowbite/plugin')],
 }
