@@ -37,9 +37,9 @@
                                         size="large"
                                     >
                                         <template #checked-icon>
-                                            <n-icon :component="DarkModeRound" />
+                                            <n-icon :component="LightModeOutlined" />
                                         </template>
-                                        <template #unchecked-icon> <n-icon :component="LightModeOutlined" /> </template
+                                        <template #unchecked-icon> <n-icon :component="DarkModeRound" /> </template
                                     ></n-switch>
                                 </n-space>
                                 <ProfileMenu></ProfileMenu>
@@ -105,7 +105,7 @@ export default defineComponent({
             collapsed: ref(true),
             menuOptions,
             darkTheme,
-            theme: ref<typeof darkTheme | null>(null),
+            theme: ref<typeof darkTheme | null>(darkTheme),
             LightModeOutlined,
             DarkModeRound,
         }

@@ -6399,6 +6399,11 @@ vue-router@^4.0.13:
   dependencies:
     "@vue/devtools-api" "^6.0.0"
 
+vue-safe-html@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/vue-safe-html/-/vue-safe-html-2.1.0.tgz#fcb4eec48cecb60ccf42fedc067663d0e193b5e7"
+  integrity sha512-ZFOJH5DwA5/DW0kIEcxFXlWCx52wA4YtcGCrUSyO8dgWqm6MEni7baXj1ktaTL0RK+6ZLU6QD2G2M89o7Z269w==
+
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.3:
   version "4.1.3"
   resolved "https://registry.npmjs.org/vue-style-loader/-/vue-style-loader-4.1.3.tgz"
@@ -6418,6 +6423,13 @@ vue3-resize-text@^0.1.0:
   integrity sha512-UCC7U3JooWEJ29ZSIXldoDNAqv3x4Dql8t9tjpA8bbPU41TJKrWpUD6uY9R515JCV6Pb1jOn9Xh3D5YWn7z9jw==
   dependencies:
     core-js "^3.6.5"
+    vue "^3.0.0"
+
+vue3-runtime-template@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/vue3-runtime-template/-/vue3-runtime-template-1.0.2.tgz"
+  integrity sha512-oquh7JFsbL9MuPqCehOufzgONVvBCmcLWCvVgBA5VreLpNGcQSmb9Bz0g9xqQ+ufdwZGQs+T111GbRyJfPYFQA==
+  dependencies:
     vue "^3.0.0"
 
 vue@^3.0.0, vue@^3.2.13:

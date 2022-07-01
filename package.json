@@ -16,7 +16,9 @@
     "vue": "^3.2.13",
     "vue-axios": "^3.4.1",
     "vue-router": "^4.0.13",
+    "vue-safe-html": "^2.1.0",
     "vue3-resize-text": "^0.1.0",
+    "vue3-runtime-template": "^1.0.2",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
