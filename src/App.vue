@@ -30,7 +30,7 @@
                                 </svg>
                             </n-button>
                             <div class="w-full flex justify-end">
-                                <Alertbutton></Alertbutton>
+                                <!--<Alertbutton></Alertbutton>-->
                                 <n-space class="px-4 py-1">
                                     <n-switch
                                         @update:value="theme === null ? (theme = darkTheme) : (theme = null)"
@@ -63,7 +63,7 @@ import { RouterLink } from 'vue-router'
 import { LaptopOutline as WorkIcon, HomeOutline as Home } from '@vicons/ionicons5'
 import { LightModeOutlined, DarkModeRound } from '@vicons/material'
 import ProfileMenu from './components/Profile-menu.vue'
-import Alertbutton from './components/Alert-button.vue'
+//import Alertbutton from './components/Alert-button.vue'
 function renderIcon(icon: Component) {
     return () => h(NIcon, null, { default: () => h(icon) })
 }
@@ -112,7 +112,7 @@ export default defineComponent({
     },
     components: {
         ProfileMenu,
-        Alertbutton,
+        //Alertbutton,
     },
 })
 </script>

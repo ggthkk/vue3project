@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import contantpage from '../views/Content-page.vue'
+//import modalpage from '../components/modal-page.vue'
 
 const routes: Array<RouteRecordRaw> = [
     {
